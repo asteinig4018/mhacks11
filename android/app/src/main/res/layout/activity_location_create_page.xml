@@ -7,7 +7,7 @@
     tools:context=".LocationCreatePage">
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/quiet_Check"
         style="@style/Widget.AppCompat.CompoundButton.CheckBox"
         android:layout_width="193dp"
         android:layout_height="36dp"
@@ -20,15 +20,15 @@
         android:focusable="true"
         android:text="@string/quiet"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/genre_prompt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/busy_Check"
         tools:text="Quiet" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/busy_Check"
         android:layout_width="187dp"
         android:layout_height="31dp"
         android:layout_marginStart="16dp"
@@ -36,15 +36,15 @@
         android:clickable="true"
         android:focusable="true"
         android:text="@string/busy"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox"
+        app:layout_constraintBottom_toTopOf="@+id/quiet_Check"
+        app:layout_constraintEnd_toStartOf="@+id/quiet_Check"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/business_prompt"
         tools:text="Busy" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/name_prompt"
         android:layout_width="256dp"
         android:layout_height="43dp"
         android:layout_marginStart="99dp"
@@ -56,14 +56,14 @@
         android:ems="10"
         android:hint="@string/top_prompt"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/business_prompt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/business_prompt"
         android:layout_width="186dp"
         android:layout_height="29dp"
         android:layout_marginStart="16dp"
@@ -74,15 +74,15 @@
         android:layout_marginBottom="1dp"
         android:text="@string/business_prompt"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintBottom_toTopOf="@+id/busy_Check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/name_prompt"
         tools:text="This location is:" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/genre_prompt"
         android:layout_width="181dp"
         android:layout_height="31dp"
         android:layout_marginStart="16dp"
@@ -92,14 +92,14 @@
         android:layout_marginRight="211dp"
         android:text="@string/descriptor_prompt"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+        app:layout_constraintBottom_toTopOf="@+id/landscape_Check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/quiet_Check"
         tools:text="...and it's perfect for..." />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/landscape_Check"
         android:layout_width="131dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
@@ -108,44 +108,44 @@
         android:layout_marginRight="264dp"
         android:focusable="true"
         android:text="@string/landscape"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox5"
+        app:layout_constraintBottom_toTopOf="@+id/portrait_Check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/genre_prompt"
         tools:text="Landscapes" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/portrait_Check"
         android:layout_width="129dp"
-        android:layout_height="33dp"
+        android:layout_height="37dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="266dp"
         android:layout_marginRight="266dp"
         android:text="@string/portrait"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox6"
+        app:layout_constraintBottom_toTopOf="@+id/city_Check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/landscape_Check"
         tools:text="Portraits" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/city_Check"
         android:layout_width="139dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:focusable="true"
         android:text="@string/cityscape"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox7"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox5"
+        app:layout_constraintBottom_toTopOf="@+id/sunrise_Check"
+        app:layout_constraintEnd_toStartOf="@+id/portrait_Check"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox5"
+        app:layout_constraintTop_toBottomOf="@+id/portrait_Check"
         tools:text="Cityscapes" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/sunrise_Check"
         android:layout_width="185dp"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
@@ -154,14 +154,14 @@
         android:layout_marginRight="210dp"
         android:layout_marginBottom="59dp"
         android:text="@string/other"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/tod_prompt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox6"
+        app:layout_constraintTop_toBottomOf="@+id/city_Check"
         tools:text="Other (specify in title)" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tod_prompt"
         android:layout_width="120dp"
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
@@ -176,7 +176,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox7"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_Check"
         tools:text="...at" />
 
     <CheckBox
@@ -192,11 +192,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tod_prompt"
         tools:text="Sunrise" />
 
     <CheckBox
-        android:id="@+id/checkBox9"
+        android:id="@+id/daytime_Check"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
@@ -212,7 +212,7 @@
         tools:text="Daytime" />
 
     <CheckBox
-        android:id="@+id/checkBox10"
+        android:id="@+id/sunset_Check"
         android:layout_width="130dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
@@ -226,24 +226,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox9"
+        app:layout_constraintTop_toBottomOf="@+id/daytime_Check"
         app:layout_constraintVertical_bias="0.0"
         tools:text="Sunset" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/home_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="113dp"
-        android:layout_marginLeft="113dp"
-        android:layout_marginTop="530dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginRight="65dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="498dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox10"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toEndOf="@+id/sunset_Check"
+        app:layout_constraintTop_toBottomOf="@+id/name_prompt" />
 
 </android.support.constraint.ConstraintLayout>
