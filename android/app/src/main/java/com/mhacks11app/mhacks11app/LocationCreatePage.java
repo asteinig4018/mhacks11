@@ -84,6 +84,14 @@ public class LocationCreatePage extends AppCompatActivity {
         CheckBox sunsetCheck = findViewById(R.id.sunset_Check);
         boolean sunset = sunsetCheck.isChecked();
 
+
+     //Print user input to file
+
+        String busy = "busy";
+        if (isBusy){
+            data1.put("activity level", busy);
+        }
+
         // Do this for all inputs
         Toast.makeText(this, "Busy checked: " + isBusy, Toast.LENGTH_SHORT).show();
 
