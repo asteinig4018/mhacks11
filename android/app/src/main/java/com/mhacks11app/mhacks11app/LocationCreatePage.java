@@ -89,12 +89,43 @@ public class LocationCreatePage extends AppCompatActivity {
         CheckBox sunsetCheck = findViewById(R.id.sunset_Check);
         boolean sunset = sunsetCheck.isChecked();
 
+        // Print user input to file
 
-     //Print user input to file
-
-        String busy = "busy";
         if (isBusy){
-            data1.put("activity level", busy);
+            data1.put("activity level: ", "busy ");
+        }
+
+        if (isQuiet) {
+
+            data1.put("activity level: ", "quiet ");
+        }
+
+        if (goodLandscape){
+            data1.put("style: ", "landscape ");
+        }
+
+        if (goodPortrait){
+            data1.put("style: ", "portrait ");
+        }
+
+        if (goodCityscape){
+            data1.put("style: ", "cityscape ");
+        }
+
+        if (isOther){
+            data1.put("style: ", "other ");
+        }
+
+        if (sunrise){
+            data1.put("ToD: ", "sunrise ");
+        }
+
+        if (daytime){
+            data1.put("ToD: ", "daytime ");
+        }
+
+        if (sunset){
+            data1.put("ToD: ", "sunset ");
         }
 
         // Do this for all inputs
