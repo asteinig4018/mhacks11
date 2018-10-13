@@ -75,5 +75,35 @@ public class LocationCreatePage extends AppCompatActivity {
                        // Log.w(TAG, "Error adding document", e);
                     }
                 });
+
+        //Gather Checkbox inputs
+
+        CheckBox busyCheckbox = findViewById(R.id.busy_Check);
+        boolean isBusy = busyCheckbox.isChecked();
+
+        CheckBox quietCheckbox = findViewById(R.id.quiet_Check);
+        boolean isQuiet = quietCheckbox.isChecked();
+
+        CheckBox landscapeCheck = findViewById(R.id.landscape_Check);
+        boolean goodLandscape = landscapeCheck.isChecked();
+
+        CheckBox portraitCheck = findViewById(R.id.portrait_Check);
+        boolean goodPortrait = portraitCheck.isChecked();
+
+        CheckBox cityCheck = findViewById(R.id.city_Check);
+        boolean goodCityscape = cityCheck.isChecked();
+
+        CheckBox otherCheck = findViewById(R.id.other_Check);
+        boolean isOther = otherCheck.isChecked();
+
+        CheckBox sunriseCheck = findViewById(R.id.sunrise_Check);
+        boolean sunrise = sunriseCheck.isChecked();
+
+        CheckBox daytimeCheck = findViewById(R.id.daytime_Check);
+        boolean daytime = daytimeCheck.isChecked();
+
+        CheckBox sunsetCheck = findViewById(R.id.sunset_Check);
+        boolean sunset = sunsetCheck.isChecked();
+        
     }
 }
