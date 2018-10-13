@@ -72,7 +72,7 @@ public class LocationCreatePage extends AppCompatActivity {
         CheckBox otherCheck = findViewById(R.id.other_Check);
         boolean isOther = otherCheck.isChecked();
 
-        CheckBox sunriseCheck = findViewById(R.id.other_Check);
+        CheckBox sunriseCheck = findViewById(R.id.sunrise_Check);
         boolean sunrise = sunriseCheck.isChecked();
 
         CheckBox daytimeCheck = findViewById(R.id.daytime_Check);
