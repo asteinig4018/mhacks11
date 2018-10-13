@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "619645863678",
-    "firebase_url": "https://android-e231b.firebaseio.com",
-    "project_id": "android-e231b",
-    "storage_bucket": "android-e231b.appspot.com"
+    "project_number": "574253407535",
+    "firebase_url": "https://direct-mason-219308.firebaseio.com",
+    "project_id": "direct-mason-219308",
+    "storage_bucket": "direct-mason-219308.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:619645863678:android:184c596175d2404f",
+        "mobilesdk_app_id": "1:574253407535:android:184c596175d2404f",
         "android_client_info": {
           "package_name": "com.mhacks11app.mhacks11app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "619645863678-nj9cifen3b7qj923i096i2pck8bvf48a.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.mhacks11app.mhacks11app",
-            "certificate_hash": "b166d37053ae83fe99c0f9e39cf84c390c89f835"
-          }
-        },
-        {
-          "client_id": "619645863678-illf8joab7pk71q1r66uejk3dq5lk7pq.apps.googleusercontent.com",
+          "client_id": "574253407535-48cpuqj7d7oehe3tet4rf4ec1r7qsn9n.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDTvkXNAAnxwK9sTfEzYxTAwgH-ufBzm1c"
+          "current_key": "AIzaSyCkOEbz5HacdKyREvl7iRK5YYLeU1cOnOc"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "619645863678-illf8joab7pk71q1r66uejk3dq5lk7pq.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
