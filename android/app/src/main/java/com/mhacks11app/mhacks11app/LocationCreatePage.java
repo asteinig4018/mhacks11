@@ -53,29 +53,6 @@ public class LocationCreatePage extends AppCompatActivity {
 
         data1.put("location",placeOne);
 
-        // Reference checkboxes and do stuff
-        CheckBox busyCheckbox = findViewById(R.id.busy_Check);
-        boolean isBusy = busyCheckbox.isChecked();
-
-        // Do this for all inputs
-        Toast.makeText(this, "Busy checked: " + isBusy, Toast.LENGTH_SHORT).show();
-
-        //create document
-        db.collection("spots")
-                .add(data1)
-                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                    @Override
-                    public void onSuccess(DocumentReference documentReference) {
-                       // Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId());
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                       // Log.w(TAG, "Error adding document", e);
-                    }
-                });
-
         //Gather Checkbox inputs
 
         CheckBox busyCheckbox = findViewById(R.id.busy_Check);
@@ -104,6 +81,27 @@ public class LocationCreatePage extends AppCompatActivity {
 
         CheckBox sunsetCheck = findViewById(R.id.sunset_Check);
         boolean sunset = sunsetCheck.isChecked();
-        
+
+        // Do this for all inputs
+        Toast.makeText(this, "Busy checked: " + isBusy, Toast.LENGTH_SHORT).show();
+
+        //create document
+        db.collection("spots")
+                .add(data1)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                       // Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId());
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                       // Log.w(TAG, "Error adding document", e);
+                    }
+                });
+
+
+
     }
 }
