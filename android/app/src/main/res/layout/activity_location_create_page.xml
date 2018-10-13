@@ -6,4 +6,134 @@
     android:layout_height="match_parent"
     tools:context=".LocationCreatePage">
 
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="193dp"
+        android:layout_height="36dp"
+        android:clickable="true"
+        android:text="Quiet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="190dp"
+        android:layout_height="41dp"
+        android:clickable="true"
+        android:text="Busy"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Location name goes here!"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="193dp"
+        android:layout_height="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="91dp"
+        tools:text="This location is:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This location is:"
+        tools:layout_editor_absoluteX="549dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="184dp"
+        android:layout_height="43dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="241dp"
+        tools:text="...and it's perfect for..." />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="153dp"
+        android:layout_height="50dp"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="272dp"
+        tools:text="Landscapes" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="155dp"
+        android:layout_height="47dp"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="315dp"
+        tools:text="Portraits" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="155dp"
+        android:layout_height="56dp"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="348dp"
+        tools:text="Cityscapes" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="198dp"
+        android:layout_height="56dp"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="392dp"
+        tools:text="Other (specify in title)" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="118dp"
+        android:layout_height="31dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="475dp"
+        tools:text="...at" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="515dp"
+        tools:text="Sunrise" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="555dp"
+        tools:text="Daytime" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="129dp"
+        android:layout_height="34dp"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="594dp"
+        tools:text="Sunset" />
+
 </android.support.constraint.ConstraintLayout>
