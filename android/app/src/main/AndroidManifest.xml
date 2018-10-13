@@ -39,7 +39,6 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".LocationCreatePage" />
-        <activity android:name=".locationCreateActivity"></activity>
     </application>
 
 </manifest>
