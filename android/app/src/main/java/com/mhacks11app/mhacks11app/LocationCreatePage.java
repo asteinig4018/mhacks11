@@ -6,10 +6,12 @@ import android.location.LocationManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Toast;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -18,6 +20,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestoreSettings;
 import com.google.firebase.firestore.GeoPoint;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -127,8 +130,16 @@ public class LocationCreatePage extends AppCompatActivity {
             data1.put("ToD3: ", "sunset ");
         }
 
+        //reading user title from strings.xml and assigning to string "title"
+        EditText inputTitle = (EditText) findViewById(R.id.name_prompt);
+        inputTitle.setInputType(InputType.TYPE_CLASS_TEXT);
+        String title = inputTitle.getText().toString();
+
+        data1.put("Title: ", title);
+
+
         // Do this for all inputs
-        Toast.makeText(this, "Busy checked: " + isBusy, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Title equals: " + title, Toast.LENGTH_LONG).show();
 
         //create document
         db.collection("spots")
