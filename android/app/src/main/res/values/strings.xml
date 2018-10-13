@@ -15,5 +15,6 @@
     <string name="daytime">Daytime</string>
     <string name="sunset">Sunset</string>
     <string name="home">Done!</string>
+    <string name="userTitle"></string>
 </resources>
 
