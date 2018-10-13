@@ -137,7 +137,7 @@
         android:layout_marginLeft="16dp"
         android:focusable="true"
         android:text="@string/cityscape"
-        app:layout_constraintBottom_toTopOf="@+id/sunrise_Check"
+        app:layout_constraintBottom_toTopOf="@+id/other_Check"
         app:layout_constraintEnd_toStartOf="@+id/portrait_Check"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,7 +145,7 @@
         tools:text="Cityscapes" />
 
     <CheckBox
-        android:id="@+id/sunrise_Check"
+        android:id="@+id/other_Check"
         android:layout_width="185dp"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
@@ -172,15 +172,15 @@
         android:layout_marginBottom="8dp"
         android:text="@string/tod_prompt"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox8"
+        app:layout_constraintBottom_toTopOf="@+id/sunrise_Check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sunrise_Check"
+        app:layout_constraintTop_toBottomOf="@+id/other_Check"
         tools:text="...at" />
 
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/sunrise_Check"
         android:layout_width="141dp"
         android:layout_height="22dp"
         android:layout_marginStart="16dp"
@@ -208,7 +208,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox8"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_Check"
         tools:text="Daytime" />
 
     <CheckBox
