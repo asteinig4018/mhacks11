@@ -1,6 +1,7 @@
 package com.mhacks11app.mhacks11app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.location.Location;
 import android.location.LocationManager;
 import android.support.annotation.NonNull;
@@ -46,6 +47,20 @@ public class LocationCreatePage extends AppCompatActivity {
                 gatherInputs();
             }
         });
+        Button photoButton = findViewById(R.id.photo_button);
+        photoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                takePhoto();
+            }
+        });
+
+    }
+
+    private void takePhoto(){
+        //launch camera, take a friggin photo dude
+        Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+        startActivity(intent);
     }
 
     private void gatherInputs() {

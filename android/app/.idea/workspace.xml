@@ -35,12 +35,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="170">
+              <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
             </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
           </provider>
         </entry>
       </file>
@@ -54,15 +57,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LocationCreatePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/LocationCreatePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="141" column="30" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
+            <state relative-caret-position="389">
+              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1504#1652#0" expanded="true" />
                 <element signature="e#1651#1652#0" expanded="true" />
+                <element signature="e#1850#1995#0" expanded="true" />
+                <element signature="e#1994#1995#0" expanded="true" />
                 <element signature="e#4453#4750#0" expanded="true" />
                 <element signature="e#4749#4750#0" expanded="true" />
                 <element signature="e#4790#5015#0" expanded="true" />
@@ -105,6 +119,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>intent</find>
+    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -2392,22 +2411,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/.idea/libraries/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/Servers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/locationCreateActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/../.idea/runConfigurations.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_location_create_page.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/LocationCreatePage.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="163" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-186" />
+    <option name="y" value="-15" />
     <option name="width" value="1940" />
     <option name="height" value="972" />
   </component>
@@ -2539,7 +2558,7 @@
   <component name="PropertiesComponent">
     <property name="android.recentlyUsedThemes" value="android:Theme.Holo.Light.NoActionBar.TranslucentDecor&#10;android:Theme.Holo" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="710KPVH0247423" />
+    <property name="device.picker.selection" value="Nexus_5X_API_27" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1539425953378" />
   </component>
@@ -2698,61 +2717,61 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="163" y="23" width="1940" height="972" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="21" />
+      <window_info anchor="bottom" id="Android Profiler" order="12" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="13" />
-      <window_info id="Image Layers" order="15" />
-      <window_info id="Build Variants" order="4" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" weight="0.32672232" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Build Variants" order="2" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" weight="0.32672232" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" weight="0.32985386" />
-      <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info anchor="bottom" id="Logcat" order="11" sideWeight="0.4978678" weight="0.32672232" />
-      <window_info id="Captures" order="7" weight="0.25" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25266525" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49733475" weight="0.30167013" />
-      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Logcat" order="8" sideWeight="0.4978678" weight="0.32672232" />
+      <window_info id="Captures" order="8" weight="0.25" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Designer" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49733475" weight="0.30167013" />
+      <window_info anchor="right" id="Gradle" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Build Variants" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50159913" side_tool="true" weight="0.32985386" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.25266525" />
-      <window_info anchor="right" id="Preview" order="12" weight="0.32995737" />
+      <window_info id="Build Variants" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.50159913" side_tool="true" weight="0.32985386" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.25266525" />
+      <window_info anchor="right" id="Preview" order="13" weight="0.32995737" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Logcat" order="16" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Device File Explorer" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Logcat" order="17" />
+      <window_info id="Structure" order="9" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Device File Explorer" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="10" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="bottom" id="Android Profiler" order="17" />
-      <window_info id="Capture Tool" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="18" show_stripe_button="false" />
-      <window_info anchor="right" id="Capture Analysis" order="10" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info id="Favorites" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info id="Image Layers" order="11" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="bottom" id="Android Profiler" order="18" />
+      <window_info id="Capture Tool" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="19" show_stripe_button="false" />
+      <window_info anchor="right" id="Capture Analysis" order="11" />
+      <window_info anchor="bottom" id="TODO" order="15" />
+      <window_info id="Favorites" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32985386" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49573562" weight="0.32985386" />
-      <window_info active="true" anchor="bottom" id="Build" order="19" sideWeight="0.4978678" visible="true" weight="0.32985386" />
-      <window_info anchor="bottom" id="Terminal" order="20" />
-      <window_info id="Captures" order="13" weight="0.25" />
-      <window_info anchor="right" id="Gradle" order="11" />
+      <window_info active="true" anchor="bottom" id="Build" order="20" sideWeight="0.4978678" visible="true" weight="0.32985386" />
+      <window_info anchor="bottom" id="Terminal" order="21" />
+      <window_info id="Captures" order="14" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info id="Designer" order="14" />
+      <window_info id="Designer" order="15" />
     </layout>
     <layout-to-restore>
       <window_info active="true" anchor="bottom" id="Build" order="11" sideWeight="0.4978678" visible="true" weight="0.32985386" />
@@ -2791,16 +2810,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -2876,6 +2885,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1504#1652#0" expanded="true" />
             <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1850#1995#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
             <element signature="e#4453#4750#0" expanded="true" />
             <element signature="e#4749#4750#0" expanded="true" />
             <element signature="e#4790#5015#0" expanded="true" />
@@ -2964,6 +2975,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1504#1652#0" expanded="true" />
             <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1850#1995#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
             <element signature="e#4453#4750#0" expanded="true" />
             <element signature="e#4749#4750#0" expanded="true" />
             <element signature="e#4790#5015#0" expanded="true" />
@@ -3057,6 +3070,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1504#1652#0" expanded="true" />
             <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1850#1995#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
             <element signature="e#4453#4750#0" expanded="true" />
             <element signature="e#4749#4750#0" expanded="true" />
             <element signature="e#4790#5015#0" expanded="true" />
@@ -3080,16 +3095,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/strings.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/Servers.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/locationCreateActivity.java" />
     <entry file="file://$PROJECT_DIR$/../.idea/runConfigurations.xml">
@@ -3128,6 +3133,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
@@ -3139,7 +3154,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/CameraActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -3166,12 +3188,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/LocationCreatePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="141" column="30" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
+        <state relative-caret-position="389">
+          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1504#1652#0" expanded="true" />
             <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1850#1995#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
             <element signature="e#4453#4750#0" expanded="true" />
             <element signature="e#4749#4750#0" expanded="true" />
             <element signature="e#4790#5015#0" expanded="true" />
