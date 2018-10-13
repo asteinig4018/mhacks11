@@ -45,9 +45,11 @@ public class LocationCreatePage extends AppCompatActivity {
         //get location
         LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
         Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+
         double longitude = location.getLongitude();
         double latitude = location.getLatitude();
-        GeoPoint placeOne= new GeoPoint(latitude,longitude);
+        GeoPoint placeOne = new GeoPoint(latitude,longitude);
 
         data1.put("location",placeOne);
 
