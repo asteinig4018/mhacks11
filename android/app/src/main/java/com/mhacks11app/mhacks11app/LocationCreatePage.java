@@ -92,40 +92,39 @@ public class LocationCreatePage extends AppCompatActivity {
         // Print user input to file
 
         if (isBusy){
-            data1.put("activity level: ", "busy ");
+            data1.put("activity level 1: ", "busy ");
         }
 
         if (isQuiet) {
-
-            data1.put("activity level: ", "quiet ");
+            data1.put("activity level 2: ", "quiet ");
         }
 
         if (goodLandscape){
-            data1.put("style: ", "landscape ");
+            data1.put("style1: ", "landscape ");
         }
 
         if (goodPortrait){
-            data1.put("style: ", "portrait ");
+            data1.put("style2: ", "portrait ");
         }
 
         if (goodCityscape){
-            data1.put("style: ", "cityscape ");
+            data1.put("style3: ", "cityscape ");
         }
 
         if (isOther){
-            data1.put("style: ", "other ");
+            data1.put("style4: ", "other ");
         }
 
         if (sunrise){
-            data1.put("ToD: ", "sunrise ");
+            data1.put("ToD1: ", "sunrise ");
         }
 
         if (daytime){
-            data1.put("ToD: ", "daytime ");
+            data1.put("ToD2: ", "daytime ");
         }
 
         if (sunset){
-            data1.put("ToD: ", "sunset ");
+            data1.put("ToD3: ", "sunset ");
         }
 
         // Do this for all inputs

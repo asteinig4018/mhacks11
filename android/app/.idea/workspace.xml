@@ -106,8 +106,8 @@
       <file leaf-file-name="LocationCreatePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/LocationCreatePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-542">
-              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+            <state relative-caret-position="224">
+              <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1483#1631#0" expanded="true" />
@@ -2780,16 +2780,16 @@
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.32672232" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026652" side_tool="true" visible="true" weight="0.30167013" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" weight="0.32985386" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="7" sideWeight="0.49840087" visible="true" weight="0.32672232" />
+      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.49840087" weight="0.32672232" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49781182" weight="0.3024236" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.49733475" visible="true" weight="0.30167013" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
@@ -3203,8 +3203,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/LocationCreatePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-542">
-          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+        <state relative-caret-position="224">
+          <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1483#1631#0" expanded="true" />
