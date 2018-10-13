@@ -18,7 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+        findViewById(R.id.locationButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LocationCreatePage.class);
+                startActivity(intent);
+            }
+        });
     }
     public void nextActivity(View view){
         Intent intent = new Intent(this,MapsActivity.class);
