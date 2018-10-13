@@ -6,6 +6,7 @@ import android.location.LocationManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -22,6 +23,8 @@ import java.util.Map;
 
 public class LocationCreatePage extends AppCompatActivity {
     FirebaseFirestore db;
+
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,13 +93,13 @@ public class LocationCreatePage extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
-                       // Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId());
+                        Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId());
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                       // Log.w(TAG, "Error adding document", e);
+                        Log.w(TAG, "Error adding document", e);
                     }
                 });
 
