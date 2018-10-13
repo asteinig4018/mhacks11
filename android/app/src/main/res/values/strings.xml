@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">Mhacks11App</string>
     <string name="title_activity_maps">Map</string>
+    <string name="top_prompt">Enter your location name here!</string>
+    <string name="business_prompt">This location is:</string>
+    <string name="descriptor_prompt">...and it\'s perfect for...</string>
+    <string name="tod_prompt">...during</string>
+    <string name="busy">Busy</string>
+    <string name="quiet">Quiet</string>
+    <string name="landscape">Landscapes</string>
+    <string name="portrait">Portraits</string>
+    <string name="cityscape">Cityscapes</string>
+    <string name="other">Other (please specify in title)</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="daytime">Daytime</string>
+    <string name="sunset">Sunset</string>
+    <string name="home">Done!</string>
 </resources>
+
