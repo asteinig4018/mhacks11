@@ -19,8 +19,10 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -134,12 +136,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                         }
                                     }
                                     infoSnippet = infoSnippet.substring(0, infoSnippet.length() - 2);
+                                    MarkerOptions markerOptions=new MarkerOptions();
                                     mMap.addMarker(new MarkerOptions()
                                             .position(sydney)
                                             .title("" + document.getString("Title"))
-                                            .snippet(infoSnippet));
+                                            .snippet(infoSnippet)
+                                            .icon(BitmapDescriptorFactory.defaultMarker( BitmapDescriptorFactory.HUE_BLUE)));
                                     Log.d(TAG, "IIIIIIIIIIIIII");
                                     Log.d(TAG, "" + infoSnippet);
+
+                                    //CustonInfoWindowGoogleMap customInfoWindow = new CustonInfoWindowGoogleMap(this);
+                                    //mMap.setInfoWindowAdapter(customInfoWindow);
+                                    Marker m = mMap.addMarker(markerOptions);
+                                    //m.setTag(info);
+                                    m.showInfoWindow();
+
 
                                         //mMap.addMarker(new MarkerOptions()
                                 }
