@@ -130,9 +130,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     Log.d(TAG, "HHHHHHHHHHHHHH");
                                     for (int i = 0; i < 8; i++) {
                                         if (document.getString("" + fields[i]) != null) {
-                                            infoSnippet += document.getString("" + fields[i]);
+                                            infoSnippet += document.getString("" + fields[i]) + "; ";
                                         }
                                     }
+                                    infoSnippet = infoSnippet.substring(0, infoSnippet.length() - 2);
                                     mMap.addMarker(new MarkerOptions()
                                             .position(sydney)
                                             .title("" + document.getString("Title"))
@@ -141,7 +142,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     Log.d(TAG, "" + infoSnippet);
 
                                         //mMap.addMarker(new MarkerOptions()
-
                                 }
 
                                 //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
