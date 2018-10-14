@@ -135,7 +135,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     }
                                     Log.d(TAG, "IIIIIIIIIIIIII");
                                     Log.d(TAG, "" + infoSnippet);
-                                    
+
                                         //mMap.addMarker(new MarkerOptions().snippet(infoSnippet));
 
                                 }

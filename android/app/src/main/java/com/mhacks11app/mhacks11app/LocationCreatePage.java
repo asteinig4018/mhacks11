@@ -110,39 +110,39 @@ public class LocationCreatePage extends AppCompatActivity {
         // Print user input to file
 
         if (isBusy){
-            data1.put("activity level 1: ", "busy ");
+            data1.put("activity level 1", "busy");
         }
 
         if (isQuiet) {
-            data1.put("activity level 2: ", "quiet ");
+            data1.put("activity level 2", "quiet");
         }
 
         if (goodLandscape){
-            data1.put("style1: ", "landscape ");
+            data1.put("style1", "landscape");
         }
 
         if (goodPortrait){
-            data1.put("style2: ", "portrait ");
+            data1.put("style2", "portrait");
         }
 
         if (goodCityscape){
-            data1.put("style3: ", "cityscape ");
+            data1.put("style3", "cityscape");
         }
 
         if (isOther){
-            data1.put("style4: ", "other ");
+            data1.put("style4", "other");
         }
 
         if (sunrise){
-            data1.put("ToD1: ", "sunrise ");
+            data1.put("ToD1", "sunrise");
         }
 
         if (daytime){
-            data1.put("ToD2: ", "daytime ");
+            data1.put("ToD2", "daytime");
         }
 
         if (sunset){
-            data1.put("ToD3: ", "sunset ");
+            data1.put("ToD3", "sunset");
         }
 
         //reading user title from strings.xml and assigning to string "title"
