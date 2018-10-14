@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mhacks11App</string>
+    <string name="app_name">Oppur</string>
     <string name="title_activity_maps">Map</string>
     <string name="top_prompt">Enter your location name here!</string>
     <string name="business_prompt">This location is:</string>
@@ -16,5 +16,6 @@
     <string name="sunset">Sunset</string>
     <string name="home">Done!</string>
     <string name="photoButton">Post a photo!</string>
+
 </resources>
 
