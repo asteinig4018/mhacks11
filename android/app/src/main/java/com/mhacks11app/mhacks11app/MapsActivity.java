@@ -147,9 +147,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                                     //CustonInfoWindowGoogleMap customInfoWindow = new CustonInfoWindowGoogleMap(this);
                                     //mMap.setInfoWindowAdapter(customInfoWindow);
-                                    Marker m = mMap.addMarker(markerOptions);
+                                    //Marker m = mMap.addMarker(markerOptions);
                                     //m.setTag(info);
-                                    m.showInfoWindow();
+                                    //m.showInfoWindow();
 
 
                                         //mMap.addMarker(new MarkerOptions()
