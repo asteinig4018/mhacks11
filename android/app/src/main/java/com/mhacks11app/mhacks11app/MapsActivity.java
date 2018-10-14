@@ -122,6 +122,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             Log.d(TAG,  "size:" + task.getResult().size());
                             int counter = 0;
                             for (DocumentSnapshot document : task.getResult()) {
+                                infoSnippet="";
                                 if (document != null) {
                                     LocationInfo loc = document.toObject(LocationInfo.class);
                                     Log.d(TAG, "!!!!!!!!!!!!");
