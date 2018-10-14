@@ -17,7 +17,9 @@ public class LocationInfo {
     private double latitude;
     private double longitude;
 
-    LocationInfo(String title, String ToD1, String ToD2, String activityLevel1,
+    public LocationInfo() {}
+
+    public LocationInfo(String title, String ToD1, String ToD2, String activityLevel1,
                  String activityLevel2, GeoPoint location, String style1, String style2,
                  String style3, String style4 ) {
         this.title = title;

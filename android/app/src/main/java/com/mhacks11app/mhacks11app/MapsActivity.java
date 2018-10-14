@@ -2,7 +2,7 @@ package com.mhacks11app.mhacks11app;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-
+import java.util.ArrayList;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.WorkerThread;
@@ -17,6 +17,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -51,17 +52,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
 
         mMap = googleMap;
+        final ArrayList<LocationInfo> locationList = new ArrayList<LocationInfo>();
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
                 .setTimestampsInSnapshotsEnabled(true)
                 .build();
         db.setFirestoreSettings(settings);
+
+
 
         Log.d(TAG, "!!!!!!!!!!!!!!!!!!!!!!!!!");
 
@@ -73,8 +73,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         if (task.isSuccessful()) {
                             Log.d(TAG, "Task was succesful");
                             Log.d(TAG,  "size:" + task.getResult().size());
+                            int counter = 0;
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                Log.d(TAG, document.getId() + " => " + document.get("location"));
+                                LocationInfo loc = document.toObject(LocationInfo.class);
+                                //locationList.add(loc);
+
+                                //Log.d(TAG, " " + loc.getLocation().getLatitude());
+
+                                // Add a marker in Sydney and move the camera
+                                LatLng sydney = new LatLng(loc.getLocation().getLatitude(), loc.getLocation().getLatitude());
+                                mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+                                mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+                                counter++;
+                                //Log.d(TAG, document.getId() + " => " + document.get("location"));
                             }
                         } else {
                             Log.d(TAG, "Error getting documents: ");
@@ -82,5 +94,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         Log.d(TAG, "no error");
                     }
                 });
+
+
+            //for (int i = 0; i < locationList.size() - 1; i++) {
+                //Log.d(TAG, locationList.get(i).getTitle());
+            //}
+
+
     }
 }
