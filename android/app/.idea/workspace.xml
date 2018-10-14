@@ -7,6 +7,9 @@
       </config>
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Maps" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
@@ -38,8 +41,8 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+            <state relative-caret-position="17">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
           <provider editor-type-id="android-manifest">
@@ -66,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationCreatePage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LocationCreatePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/LocationCreatePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            <state relative-caret-position="338">
+              <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="75" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1504#1652#0" expanded="true" />
@@ -81,6 +84,28 @@
                 <element signature="e#4749#4750#0" expanded="true" />
                 <element signature="e#4790#5015#0" expanded="true" />
                 <element signature="e#5014#5015#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/LocationInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapsActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/MapsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="118" column="34" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2288#2302#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2421,6 +2446,7 @@
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_location_create_page.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/LocationCreatePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/MapsActivity.java" />
       </list>
     </option>
   </component>
@@ -2558,7 +2584,7 @@
   <component name="PropertiesComponent">
     <property name="android.recentlyUsedThemes" value="android:Theme.Holo.Light.NoActionBar.TranslucentDecor&#10;android:Theme.Holo" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="Nexus_5X_API_27" />
+    <property name="device.picker.selection" value="710KPVH0247423" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1539425953378" />
   </component>
@@ -2717,25 +2743,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-44" y="50" width="1940" height="972" extended-state="0" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="12" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="6" />
+      <window_info id="Image Layers" order="3" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" weight="0.32672232" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50212765" side_tool="true" weight="0.6438849" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" weight="0.32985386" />
       <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="Logcat" order="8" sideWeight="0.4978678" weight="0.32672232" />
-      <window_info id="Captures" order="8" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="8" sideWeight="0.49787235" visible="true" weight="0.28417265" />
+      <window_info id="Captures" order="7" weight="0.25" />
       <window_info id="Capture Tool" order="4" />
-      <window_info id="Designer" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
-      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49733475" weight="0.30167013" />
+      <window_info id="Designer" order="8" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25212765" />
+      <window_info anchor="bottom" id="Build" order="11" sideWeight="0.4973404" weight="0.34652278" />
       <window_info anchor="right" id="Gradle" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
@@ -2790,6 +2815,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50159913" side_tool="true" weight="0.32985386" />
       <window_info anchor="right" id="Preview" order="8" weight="0.32995737" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32985386" />
       <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Logcat" order="8" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
@@ -2802,7 +2828,6 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32985386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -3113,8 +3138,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="372">
+          <caret line="118" column="34" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2288#2302#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3135,8 +3164,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+        <state relative-caret-position="17">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
       <provider editor-type-id="android-manifest">
@@ -3158,13 +3187,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/CameraActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/CameraActivity.java" />
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_location_create_page.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
@@ -3188,8 +3211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhacks11app/mhacks11app/LocationCreatePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        <state relative-caret-position="338">
+          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="75" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1504#1652#0" expanded="true" />

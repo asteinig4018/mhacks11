@@ -1,5 +1,12 @@
 package com.mhacks11app.mhacks11app;
 
+import android.Manifest;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import java.util.ArrayList;
@@ -12,6 +19,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -27,6 +35,34 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private String TAG = "MapsActivity";
+
+    public void centerMapOnLocation(){
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+
+
+        Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        if (location != null){
+
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 13));
+
+            CameraPosition cameraPosition = new CameraPosition.Builder()
+                    .target(new LatLng(location.getLatitude(), location.getLongitude()))
+                    .zoom(17)
+                    .bearing(90)
+                    .tilt(40)
+                    .build();
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
+        }
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +97,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .build();
         db.setFirestoreSettings(settings);
 
+        centerMapOnLocation();
+
 
 
         Log.d(TAG, "!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -78,7 +116,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 LocationInfo loc = document.toObject(LocationInfo.class);
                                 LatLng sydney = new LatLng(loc.getLocation().getLatitude(), loc.getLocation().getLongitude());
                                 mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-                                mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                                //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                             }
                         } else {
                             Log.d(TAG, "Error getting documents: ");
@@ -86,5 +124,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         Log.d(TAG, "no error");
                     }
                 });
+
+
     }
 }
+
+
