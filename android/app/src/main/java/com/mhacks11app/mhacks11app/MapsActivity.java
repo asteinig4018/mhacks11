@@ -122,13 +122,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             for (DocumentSnapshot document : task.getResult()) {
                                 if (document != null) {
                                     LocationInfo loc = document.toObject(LocationInfo.class);
+                                    Log.d(TAG, "!!!!!!!!!!!!");
                                     LatLng sydney = new LatLng(loc.getLocation().getLatitude(), loc.getLocation().getLongitude());
+                                    Log.d(TAG, "" + loc.getLocation().getLatitude());
+                                    Log.d(TAG, "" + loc.getLocation().getLongitude());
                                     mMap.addMarker(new MarkerOptions().position(sydney).title("" + document.getString("Title")));
+                                    Log.d(TAG, "HHHHHHHHHHHHHH");
                                     for (int i = 0; i < 8; i++) {
-                                        infoSnippet += document.getString(fields[i]) + " ";
+                                        if (document.getString("" + fields[i]) != null) {
+                                            infoSnippet += document.getString("" + fields[i]);
+                                        }
                                     }
+                                    Log.d(TAG, "IIIIIIIIIIIIII");
+                                    Log.d(TAG, "" + infoSnippet);
+                                    
+                                        //mMap.addMarker(new MarkerOptions().snippet(infoSnippet));
 
-                                    mMap.addMarker(new MarkerOptions().snippet(infoSnippet));
                                 }
 
                                 //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
