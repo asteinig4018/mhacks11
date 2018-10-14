@@ -48,15 +48,6 @@ public class LocationCreatePage extends AppCompatActivity {
             }
         });
 
-        //Camera implementation
-        Button photoButton = findViewById(R.id.photo_button);
-        photoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                takePhoto();
-            }
-        });
-
     }
 
     private void takePhoto(){
