@@ -156,7 +156,7 @@ public class LocationCreatePage extends AppCompatActivity {
 
 
         // Do this for all inputs
-        Toast.makeText(this, "Title equals: " + title, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Title equals: " + title, Toast.LENGTH_LONG).show();
 
         //create document
         db.collection("spots")
@@ -175,6 +175,13 @@ public class LocationCreatePage extends AppCompatActivity {
                 });
 
 
+        Intent intent = new Intent(this,MainActivity.class);
+        //EditText editText= (EditText) findViewById(R.id.editText);
+        //String message = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);}
+
+
 
     }
-}
+
