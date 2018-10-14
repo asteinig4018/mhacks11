@@ -150,7 +150,7 @@ public class LocationCreatePage extends AppCompatActivity {
         inputTitle.setInputType(InputType.TYPE_CLASS_TEXT);
         String title = inputTitle.getText().toString();
 
-        data1.put("Title: ", title);
+        data1.put("Title", title);
 
 
         // Do this for all inputs
