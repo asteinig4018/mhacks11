@@ -29,7 +29,7 @@ import java.util.Map;
 public class LocationCreatePage extends AppCompatActivity {
     FirebaseFirestore db;
 
-    private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String TAG = "Oppur";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,8 @@ public class LocationCreatePage extends AppCompatActivity {
                 gatherInputs();
             }
         });
+
+        //Camera implementation
         Button photoButton = findViewById(R.id.photo_button);
         photoButton.setOnClickListener(new View.OnClickListener() {
             @Override
