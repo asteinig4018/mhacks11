@@ -135,7 +135,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                             infoSnippet += document.getString("" + fields[i]) + "; ";
                                         }
                                     }
-                                    infoSnippet = infoSnippet.substring(0, infoSnippet.length() - 2);
+                                    //infoSnippet = infoSnippet.substring(0, infoSnippet.length() - 2);
                                     MarkerOptions markerOptions=new MarkerOptions();
                                     mMap.addMarker(new MarkerOptions()
                                             .position(sydney)
