@@ -26,6 +26,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -91,6 +92,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         final ArrayList<LocationInfo> locationList = new ArrayList<LocationInfo>();
 
 
+
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
                 .setTimestampsInSnapshotsEnabled(true)
@@ -108,14 +110,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
+
+                        String[] fields = { "ToD1", "ToD2", "activity level 1", "activity level 2",
+                                            "style1", "style2", "style3", "style4" };
+                        String infoSnippet = "";
+
                         if (task.isSuccessful()) {
                             Log.d(TAG, "Task was succesful");
                             Log.d(TAG,  "size:" + task.getResult().size());
                             int counter = 0;
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                LocationInfo loc = document.toObject(LocationInfo.class);
-                                LatLng sydney = new LatLng(loc.getLocation().getLatitude(), loc.getLocation().getLongitude());
-                                mMap.addMarker(new MarkerOptions().position(sydney).title("" + document.getString("Title")));
+                            for (DocumentSnapshot document : task.getResult()) {
+                                if (document != null) {
+                                    LocationInfo loc = document.toObject(LocationInfo.class);
+                                    LatLng sydney = new LatLng(loc.getLocation().getLatitude(), loc.getLocation().getLongitude());
+                                    mMap.addMarker(new MarkerOptions().position(sydney).title("" + document.getString("Title")));
+                                    for (int i = 0; i < 8; i++) {
+                                        infoSnippet += document.getString(fields[i]) + " ";
+                                    }
+
+                                    mMap.addMarker(new MarkerOptions().snippet(infoSnippet));
+                                }
+
                                 //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                             }
                         } else {
