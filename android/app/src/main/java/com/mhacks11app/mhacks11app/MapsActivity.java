@@ -76,17 +76,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             int counter = 0;
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 LocationInfo loc = document.toObject(LocationInfo.class);
-                                //locationList.add(loc);
-
-                                //Log.d(TAG, " " + loc.getLocation().getLatitude());
-
-                                // Add a marker in Sydney and move the camera
                                 LatLng sydney = new LatLng(loc.getLocation().getLatitude(), loc.getLocation().getLongitude());
                                 mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
                                 mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-
-                                counter++;
-                                //Log.d(TAG, document.getId() + " => " + document.get("location"));
                             }
                         } else {
                             Log.d(TAG, "Error getting documents: ");
@@ -94,12 +86,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         Log.d(TAG, "no error");
                     }
                 });
-
-
-            //for (int i = 0; i < locationList.size() - 1; i++) {
-                //Log.d(TAG, locationList.get(i).getTitle());
-            //}
-
-
     }
 }
